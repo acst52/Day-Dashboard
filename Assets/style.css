@@ -33,7 +33,7 @@ section{
 
 #quote{
     height: 50px;
-    margin: 10px 20px 10px 20px;
+    
     background-color: rgb(255, 241, 230);
     text-align: center;
     padding-top: 15px;   
@@ -57,7 +57,7 @@ section{
 #daily-tasks{
     height: 300px;
     margin-bottom: 55px;
-    
+    margin-top: 0px;
    
 }
 
@@ -79,6 +79,8 @@ section{
 
 #daily-tasks2{
     display:none;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
 
@@ -139,7 +141,7 @@ section{
     #quote2{
         display:block;
         height: 50px;
-        margin: 10px 20px 10px 20px;
+       
         background-color: rgb(255, 241, 230);
         text-align: center;
         padding-top: 15px;
