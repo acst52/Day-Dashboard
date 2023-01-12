@@ -5,13 +5,171 @@
 
 /* @import url('Google font URL here'); */
 
-/* header {
 
-} */
+body{
+    background-color: rgb(165, 165, 141);
 
-/* body {
+}
 
-} */
+section{
+    
+    margin: 20px;
+    background-color: rgb(255, 241, 230);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#welcome-message{
+    height: 50px;
+    margin: 0px 20px 0px 20px;
+    background-color: rgb(255, 241, 230);
+    text-align: center;
+    padding-top: 15px;     
+}
+
+
+#quote{
+    height: 50px;
+    margin: 10px 20px 10px 20px;
+    background-color: rgb(255, 241, 230);
+    text-align: center;
+    padding-top: 15px;   
+}
+
+#mood{
+    height: 300px;
+    margin-top: 10px;
+    
+    flex-grow: 1;
+}
+
+#horoscope{
+    height: 300px;
+    
+    margin-top: 10px;
+    flex-grow: 2;
+    margin-left: 0px;
+}
+
+#daily-tasks{
+    height: 300px;
+    margin-bottom: 55px;
+    
+   
+}
+
+#welcome-message2{
+    display:none;
+}
+
+#quote2{
+    display:none;
+}
+
+#mood2{
+    display:none;
+}
+
+#horoscope2{
+    display:none;
+}
+
+#daily-tasks2{
+    display:none;
+}
+
+
+
+@media screen and (min-width: 750px) {
+    
+    
+    #welcome-message{
+        display: none;
+         
+    }
+
+    #quote{
+        display: none;
+    }
+
+    #mood{
+       display: none;
+      
+          
+    }
+
+    #horoscope{
+        display:none;
+            
+    }
+
+    #daily-tasks{
+       
+       display:none;
+        
+    }
+
+    #welcome-message2{
+        display: flex;
+        height: 50px;
+        margin: 0px 20px 0px 20px;
+        background-color: rgb(255, 241, 230);
+        text-align: center;
+        padding-top: 15px; 
+    }
+    
+    .flex-row2{
+        display: flex;
+        
+    }
+
+    #column-one{
+        width: 30%;
+    }
+
+    #column-two{
+        width: 70%;
+        
+        
+    }
+    
+    #quote2{
+        display:block;
+        height: 50px;
+        margin: 10px 20px 10px 20px;
+        background-color: rgb(255, 241, 230);
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    #mood2{
+        display: block;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-grow: 1;
+    }
+    
+    #horoscope2{
+        display:block;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        flex-grow: 2;
+        margin-left: 20px;
+    }
+    
+    #daily-tasks2{
+        display:block;
+        height: 670px;
+        margin-bottom: 20px;
+        
+           
+    }
+}
 
 
 
