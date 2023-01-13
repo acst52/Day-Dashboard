@@ -94,7 +94,7 @@ section{
     }
 
     #quote{
-        display: none;
+        /* display: none; */
     }
 
     #mood{

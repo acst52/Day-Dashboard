@@ -8,8 +8,9 @@ const options = {
         'x-rapidapi-host': 'quotes15.p.rapidapi.com'
         }
     };
+const API = document.getElementById ("API1")
 
-const quoteApp = document.getElementById('quoteApp');
+const quoteApp = document.getElementById('quote');
 
 // Task list variables:
 const taskForm = document.getElementById('taskForm');
@@ -19,6 +20,7 @@ const toDoField = document.getElementById('toDoField');
 
 // Let's generate a random quote + author:
 function generateRandomQuote() {
+    quoteApp.innerHTML=""
     fetch('https://quotes15.p.rapidapi.com/quotes/random/', options)
         .then(response => response.json())
         .then(data => {
@@ -31,6 +33,6 @@ function generateRandomQuote() {
         quoteApp.append(author);
             console.log(quoteText, author);})  // data is locally scoped inside .then fcn so have to be inside .then to use data
 }
-
+API1.addEventListener("click",generateRandomQuote )
 // Let's call the previously defined fcn:
 generateRandomQuote();
