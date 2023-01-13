@@ -34,3 +34,29 @@ function generateRandomQuote() {
 
 // Let's call the previously defined fcn:
 generateRandomQuote();
+
+// Now let's dynamically create our task input fields and checkable-list & store locally:
+function createTask(event) {
+    event.preventDefault();  // prevented page refresh to fix bug of task immediately disappearing
+    const task = taskInput.value;
+            console.log(task);
+    const label = document.createElement("label");
+        label.setAttribute("for", "checkbox-nested");
+    const labelInput = document.createElement("input");
+        labelInput.setAttribute("type", "checkbox");
+        labelInput.setAttribute("name", task);
+        labelInput.checked = false;
+        label.textContent = taskInput.value + " ";
+        label.append(labelInput);
+        toDoField.append(label);
+            console.log(label);
+    // want tasks to generate on separate lines / vertically, not horiz, every time the fcn runs i.e. every time a task is added
+    const lineBr = document.createElement("br");
+        toDoField.append(lineBr);
+    // left to do in this fcn: save tasks + checked-or-not to local storage - not working
+        // PRoblem may be that label is being added as a KEY
+    localStorage.setItem("task", JSON.stringify(task));
+    console.log(task);  // every time you add a new task, its pushed to a task array (name + checked status) - update that and set item again
+    localStorage.setItem("isChecked", JSON.stringify(labelInput.checked));
+    // if page is reloaded/refreshed, run refreshTasks fcn, otherwise stop here???
+};
