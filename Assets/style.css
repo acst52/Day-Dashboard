@@ -13,106 +13,40 @@ body{
 
 section{
     
-    margin: 20px;
+    
     background-color: rgb(255, 241, 230);
-}
-
-.flex-row{
-    display: flex;
-    flex-direction: row;
 }
 
 #welcome-message{
-    height: 50px;
-    margin: 0px 20px 0px 20px;
-    background-color: rgb(255, 241, 230);
     text-align: center;
     padding-top: 15px;     
 }
 
 
-#quote{
-    height: 50px;
-    
-    background-color: rgb(255, 241, 230);
+#quoteApp{
     text-align: center;
     padding-top: 15px;   
 }
 
 #mood{
-    height: 300px;
-    margin-top: 10px;
-    
-    flex-grow: 1;
+    height:250px;
 }
 
-#horoscope{
-    height: 300px;
-    
-    margin-top: 10px;
-    flex-grow: 2;
-    margin-left: 0px;
+#movies{
+  
 }
 
 #daily-tasks{
-    height: 300px;
-    margin-bottom: 55px;
-    margin-top: 0px;
+   height: 300px;
    
 }
 
-#welcome-message2{
-    display:none;
-}
-
-#quote2{
-    display:none;
-}
-
-#mood2{
-    display:none;
-}
-
-#horoscope2{
-    display:none;
-}
-
-#daily-tasks2{
-    display:none;
-    margin-top: 0px;
-    margin-left: 0px;
-}
-
-
-
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 640px) {
     
     
-    #welcome-message{
-        display: none;
-         
-    }
+    
 
-    #quote{
-        display: none;
-    }
-
-    #mood{
-       display: none;
-      
-          
-    }
-
-    #horoscope{
-        display:none;
-            
-    }
-
-    #daily-tasks{
-       
-       display:none;
-        
-    }
+   
 
     #welcome-message2{
         display: flex;
@@ -138,7 +72,7 @@ section{
         
     }
     
-    #quote2{
+    #quoteApp2{
         display:block;
         height: 50px;
        

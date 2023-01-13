@@ -7,44 +7,25 @@
         <title>Day Dashboard</title>
         <link rel="stylesheet" href="./assets/reset.css" />
         <link rel="stylesheet" href="./assets/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
     
         <main>
-
-            <section id="welcome-message"><h1>Good<span id="welcome-time">Morning</span></h1></section>
+            <div class=" grid grid-cols-2 gap-2">
+            <section id="welcome-message" class="col-span-2"><h1>Good<span id="welcome-time">Morning</span></h1></section>
             
 
-            <section id="quote"><h1>Quote</h1></section>
+            <section id="quoteApp" class="col-span-2"><h1>Quote</h1></section>
             
+            <section id="mood" class=""><h1>Mood</h1></section>
 
-            <div class="flex-row">
-            <section id="mood"><h1>Mood</h1></section>
+            <section id="movies"><h1>Movies</h1></section>
             
-            <section id="horoscope"><h1>Horoscope</h1></section>
+            <section id="daily-tasks" class="col-span-2"><h1>Daily Tasks</h1></section>
+            
             </div>
-
-            <div id="daily-tasks-grid">
-            <section id="daily-tasks"><h1>Daily Tasks</h1></section>
-            </div>
-
-            <!--Hidden-->
-
-            <section id="quote2"><h1>Quote</h1></section>
-            
-
-            <div class="flex-row2">
-            <div id="column-one">
-            <section id="welcome-message2"><h1>Good<span id="welcome-time">Morning</span></h1></section>
-            
-            <section id="mood2"><h1>Mood</h1></section>
-            
-            <section id="horoscope2"><h1>Horoscope</h1></section>
-            </div>
-            <div id="column-two">
-            <section id="daily-tasks2"><h1>Daily Tasks</h1></section>
-            </div>
-            </div>
+ 
         </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
