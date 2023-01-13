@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 3px;
+}
+
+/* @import url('Google font URL here'); */
+
+
+body{
+    background-color: rgb(165, 165, 141);
+
+}
+
+section{
+    
+    
+    background-color: rgb(255, 241, 230);
+}
+
+#welcome-message{
+    text-align: center;
+    padding-top: 15px;     
+}
+
+
+#quoteApp{
+    text-align: center;
+    padding-top: 15px;   
+}
+
+#mood{
+    height:250px;
+}
+
+#movies{
+  
+}
+
+#daily-tasks{
+   height: 300px;
+   
+}
+
+@media screen and (min-width: 640px) {
+    
+    
+    
+
+   
+
+    #welcome-message2{
+        display: flex;
+        height: 50px;
+        margin: 0px 20px 0px 20px;
+        background-color: rgb(255, 241, 230);
+        text-align: center;
+        padding-top: 15px; 
+    }
+    
+    .flex-row2{
+        display: flex;
+        
+    }
+
+    #column-one{
+        width: 30%;
+    }
+
+    #column-two{
+        width: 70%;
+        
+        
+    }
+    
+    #quoteApp2{
+        display:block;
+        height: 50px;
+       
+        background-color: rgb(255, 241, 230);
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    #mood2{
+        display: block;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-grow: 1;
+    }
+    
+    #horoscope2{
+        display:block;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        flex-grow: 2;
+        margin-left: 20px;
+    }
+    
+    #daily-tasks2{
+        display:block;
+        height: 670px;
+        margin-bottom: 20px;
+        
+           
+    }
+}
+
+
+
+
+
+
+
+/* @media screen and (max-width: 750px) {
+
+} */
+
+/* @media screen and (max-width: 500px) {
+
+} */
