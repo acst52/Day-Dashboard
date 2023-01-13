@@ -11,6 +11,63 @@
     <body>
 
         <div id="quoteApp"></div>
+        
+         <div id="formContainer">
+                <form id="taskForm">
+                    <h2>Create a Task: </h2>
+                    <!-- <br /> -->
+                    <input type="text" id="taskInput" />
+                    <button type="submit" id="taskBtn">Create Task</button>
+                </form>
+                <br />
+            </div>
+            <h2>Daily Tasks</h2>
+            <fieldset id="toDoField">
+                <legend>To-do List: </legend>
+                <!-- nested confetti code: -->
+                <div id="confetti-container"></div>
+                    <style>
+                        /* styles for the confetti elements */
+                            .confetti {
+                            width: 10px;
+                            height: 10px;
+                            /* background-color: red; */
+                            border-radius: 100%;
+                            position: absolute;
+                            top: -10px;
+                            }
+
+                            .red {
+                                background-color: rgb(255, 0, 0);
+                            }
+
+                            .green {
+                                background-color: rgb(9, 149, 9);
+                            }
+
+                            .blue {
+                                background-color: rgb(21, 21, 251);
+                            }
+
+                            .yellow {
+                                background-color: yellow;
+                            }
+
+                            .orange {
+                                background-color: orange;
+                            }
+
+                            .purple {
+                                background-color: blueviolet;
+                            }
+
+                            .pink {
+                                background-color: rgb(255, 75, 198);
+                            }
+
+                    </style>
+                <!-- end of nested confetti code -->
+            </fieldset>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
