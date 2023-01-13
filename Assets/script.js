@@ -59,4 +59,28 @@ function createTask(event) {
     console.log(task);  // every time you add a new task, its pushed to a task array (name + checked status) - update that and set item again
     localStorage.setItem("isChecked", JSON.stringify(labelInput.checked));
     // if page is reloaded/refreshed, run refreshTasks fcn, otherwise stop here???
+
+// CONFETTI CODE:
+    const checkbox = labelInput;
+    const confettiContainer = document.getElementById("confetti-container");
+    const colors = ["red", "purple", "pink", "blue", "green", "yellow", "orange"];
+
+    checkbox.addEventListener("change", function(){
+        if (this.checked) {
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement("div");
+                confetti.classList.add("confetti");
+                confettiContainer.appendChild(confetti);
+
+                // make confetti a random color from the color array:
+                confetti.classList.add(colors[Math.floor(Math.random()*colors.length)]);
+                confettiContainer.appendChild(confetti);
+                
+                // animate confetti falling:
+                confetti.style.left = Math.random() * 100 + "vw";
+                confetti.style.animation = `fall ${Math.random() + 1}s ease-in-out ${Math.random() * 3}s forwards`;
+            }
+        }
+    })
+// END OF CONFETTI CODE
 };
