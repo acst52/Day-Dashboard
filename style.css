@@ -41,6 +41,59 @@ section{
    
 }
 
+/* CONFETTI CSS START */
+
+/* styles for the confetti elements */
+.confetti {
+    width: 9px;
+    height: 9px;
+    border-radius: 30%;
+    position: absolute;
+    top: -10px;
+}
+
+/* confetti colors array: */
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+.green {
+    background-color: rgb(9, 149, 9);
+}
+
+.blue {
+    background-color: rgb(21, 21, 251);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: rgb(255, 153, 0);
+}
+
+.purple {
+    background-color: blueviolet;
+}
+
+.pink {
+    background-color: rgb(214, 34, 157);
+}
+
+/* confetti animation */
+
+@keyframes fall {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* CONFETTI CSS END */
+
 @media screen and (min-width: 640px) {
     
     
