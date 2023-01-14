@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Day Dashboard</title>
+        <link rel="stylesheet" href="./assets/reset.css" />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+    
+        <main>
+            <div class=" grid grid-cols-6 gap-3">
+            
+            <section id="quoteApp" class=" col-start-1 col-span-6"><h1>Quote</h1></section>
+            
+            <section id="mood" class="col-span-2 md:row-start-6 md:col-span-6 "><h1>Mood</h1></section>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Day Dashboard</title>
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-
-    <main>
-        <div class=" grid grid-cols-2 gap-2">
-
-            <section id="quoteApp" class="col-span-2"><h1>Quote</h1></section>
-
-            <section id="mood" class="">
-                <h1>Mood</h1>
-            </section>
-
-            <section id="movies">
-                <h1>Movies</h1>
-            </section>
-
-            <section id="daily-tasks" class="col-span-2">
-                <h1>Daily Tasks</h1>
-            </section>
-
-        </div>
-
-    </main>
+            <section id="movies" class="col-span-4 col-start-3 row-start-2 row-span-1 md:col-span-2 md: row-span-4 md:row-start-2 "><h1>Movies</h1></section>
+            
+            <section id="daily-tasks" class="col-start-1 row-start-3 col-span-6 md:col-span-4 md:col-start-3 md:row-start-2 md:row-span-4 "><h1>Daily Tasks</h1></section>
+            
+            </div>
+ 
+        </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+        crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
 
-</body>
-
+    </body>
 </html>
