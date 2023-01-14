@@ -1,3 +1,34 @@
+// ********** MODAL CODE START **********
+
+// Get the modal
+var modal = document.getElementById("modal1");
+
+// Get the button that opens the modal
+var modalBtn = document.getElementById("modalBtn");
+
+// Get the span X element that closes the modal
+var span = document.getElementsByClassName("closeModal")[0];
+
+// When the user clicks on the loveCalc button, open modal
+modalBtn.addEventListener("click", function(){
+    modal.style.display = "block";
+    document.getElementById("response").textContent = "";
+});
+    
+// When the user clicks on span X, close modal
+span.addEventListener("click", function(){
+    modal.style.display = "none";
+});
+    
+// When user clicks anywhere outside of modal, close it
+window.addEventListener("click", function(event){
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+});
+
+// ********** MODAL CODE END **********
+
 // Let's get the data from the Quotes API:
 // Quote API variables:
 const API_KEY = '1aad9b257amsh8cea256130839a7p1e5326jsn1feba12d1c03'
