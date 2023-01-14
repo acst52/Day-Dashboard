@@ -19,7 +19,40 @@
             <section id="mood" class="col-span-2 md:row-start-6 md:col-span-6 "><h1>Mood</h1></section>
 
             <section id="movies" class="col-span-4 col-start-3 row-start-2 row-span-1 md:col-span-2 md: row-span-4 md:row-start-2 "><h1>Movies</h1></section>
-            
+                
+<!-- BEGINNING OF LOVE CALC API WITHIN MODAL -->
+
+<!-- button to trigger modal:  -->
+<button id="modalBtn">Love Calculator</button>
+
+<!-- API #2: Love Calculator - within modal -->
+<div id="modal1" class="modal1">
+
+    <!-- modal div content: -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="closeModal">&times;</span>
+            <h2>Want today's love forecast?</h2>
+        </div>
+        <div class="modal-body">
+            <p>Enter your first name: </p>
+            <input type="text" id="modalNameInput1" /> 
+            <!-- <input type="submit" id="submitNameInput1" value="save" /> -->
+            <p>What is your partner's / crush's first name? </p>
+            <input type="text" id="modalNameInput2" />
+            <!-- <input type="submit" id="submitNameInput2" value="save" /> -->
+            <p id="response"></p>
+        </div>
+        <div class="modal-footer">
+            <h3>Save your names to see your Love Compatibility for the day!</h3>
+            <button id="loveCalc">Is love in the air?</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- END OF LOVE CALC IN MODAL CODE -->
+                
             <section id="daily-tasks" class="col-start-1 row-start-3 col-span-6 md:col-span-4 md:col-start-3 md:row-start-2 md:row-span-4 "><h1>Daily Tasks</h1></section>
             
             </div>
