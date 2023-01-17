@@ -131,7 +131,7 @@ function createTask(event) {
 taskBtn.addEventListener("click", createTask);
 
 
-
+// ********** RICH PERSON CODE START **********
 
 let tableEl = document.querySelector('.table');
 
@@ -143,7 +143,8 @@ async function richPeople() {
 
     // Creating the table
     for (let i = 0; i < data.length; i++) {
-
+        
+    // tr = table with rows
       const tr = document.createElement("tr");
 
       // Create img table data
@@ -205,13 +206,3 @@ if (tableEl.style.display === "none") {
  tableEl.style.display = "none";
   }
  });
-
-
-
-
-
-
-
-
-
-
