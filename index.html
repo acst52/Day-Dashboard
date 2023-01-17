@@ -15,24 +15,17 @@
     </head>
     <body>
     
-        <main>
-            <div class=" grid grid-cols-6 gap-3">
+<main>
+<!-- sets grid for positioning of elements: -->
+<div class=" grid grid-cols-6 gap-3">
             
-            <section id="quoteApp" class=" col-start-1 col-span-6"><h1>Quote</h1></section>
+<section id="quoteApp" class=" col-start-1 col-span-6"></section>
             
-            <section id="mood" class="col-span-2 md:row-start-6 md:col-span-6 "><h1>Mood</h1></section>
-
-            <section id="movies" class="col-span-4 col-start-3 row-start-2 row-span-1 md:col-span-2 md: row-span-4 md:row-start-2 "><h1>Movies</h1></section>
-                
-<!-- BEGINNING OF LOVE CALC API WITHIN MODAL -->
-
-<!-- button to trigger modal:  -->
-<button id="modalBtn">Love Calculator</button>
-
-<!-- API #2: Love Calculator - within modal -->
-<div id="modal1" class="modal1">
-
-    <!-- modal div content: -->
+<section id="mood" class="col-span-2 md:row-start-6 md:col-span-6 "><h1>Mood</h1>
+<!-- button to trigger loveCalc modal:  -->
+    <button id="modalBtn">Love Calculator</button>
+    <div id="modal1" class="modal1">
+<!-- modal div content: -->
     <div class="modal-content">
         <div class="modal-header">
             <span class="closeModal">&times;</span>
@@ -41,10 +34,8 @@
         <div class="modal-body">
             <p>Enter your first name: </p>
             <input type="text" id="modalNameInput1" /> 
-            <!-- <input type="submit" id="submitNameInput1" value="save" /> -->
             <p>What is your partner's / crush's first name? </p>
             <input type="text" id="modalNameInput2" />
-            <!-- <input type="submit" id="submitNameInput2" value="save" /> -->
             <p id="response"></p>
         </div>
         <div class="modal-footer">
@@ -54,10 +45,18 @@
     </div>
 
 </div>
+</section>
 
-<!-- END OF LOVE CALC IN MODAL -->
-                
-            <section id="daily-tasks" class="col-start-1 row-start-3 col-span-6 md:col-span-4 md:col-start-3 md:row-start-2 md:row-span-4 "><h1>Daily Tasks</h1>
+<section id="movies" class="col-span-4 col-start-3 row-start-2 row-span-1 md:col-span-2 md: row-span-4 md:row-start-2 "><h1>Are you the richest person yet?</h1>
+        <table>
+            <h2>The richest people in the world </h2>
+            <button class="toggle-btn">Hide the Result </button>
+            <button class="getresult">Get the result</button>
+        <div class="table"></div>
+        </table>
+</section>
+                    
+<section id="daily-tasks" class="col-start-1 row-start-3 col-span-6 md:col-span-4 md:col-start-3 md:row-start-2 md:row-span-4 "><h1>Daily Tasks</h1>
 
 <!-- BEGINNING OF TASK LIST ELEMENTS -->
 
@@ -79,11 +78,11 @@
 
 <!-- END OF TASK LIST ELEMENTS -->
 
-            </section>
+</section>
             
-            </div>
+</div>
  
-        </main>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
