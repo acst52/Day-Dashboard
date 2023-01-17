@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+        <!-- stylesheets & tailwind linked here: -->
         <link rel="stylesheet" href="./Assets/reset.css" />
         <link rel="stylesheet" href="./Assets/style.css" />
         <script src="https://cdn.tailwindcss.com"></script>
@@ -18,10 +19,12 @@
 <main>
 <!-- sets grid for positioning of elements: -->
 <div class=" grid grid-cols-6 gap-3">
-            
+    
+<!-- section that contains Quote API -->
 <section id="quoteApp" class=" col-start-1 col-span-6"></section>
-            
-<section id="mood" class="col-span-2 md:row-start-6 md:col-span-6 "><h1>Mood</h1>
+
+<!-- section that contains love calculator API inside modal -->
+<section id="mood" class="col-span-2 md:row-start-6 md:col-span-6 ">
 <!-- button to trigger loveCalc modal:  -->
     <button id="modalBtn">Love Calculator</button>
     <div id="modal1" class="modal1">
@@ -47,12 +50,11 @@
 </div>
 </section>
 
-<section id="movies" class="col-span-4 col-start-3 row-start-2 row-span-1 md:col-span-2 md: row-span-4 md:row-start-2 "><h1>Are you the richest person yet?</h1>
+<section id="richestPeople" class="col-span-4 col-start-3 row-start-2 row-span-1 md:col-span-2 md: row-span-4 md:row-start-2 "><h1>Are you the richest person yet?</h1>
         <table>
-            <h2>The richest people in the world </h2>
-            <button class="toggle-btn">Hide the Result </button>
-            <button class="getresult">Get the result</button>
-        <div class="table"></div>
+            <button class="getresult">Click here to see!</button>
+            <button class="toggle-btn">Hide result</button>
+            <a href="./Assets/rich.html" target="_blank" class="table"></a>
         </table>
 </section>
                     
