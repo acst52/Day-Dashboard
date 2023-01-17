@@ -1,3 +1,37 @@
+// ********** MODAL CODE START **********
+
+// Get the modal
+var modal = document.getElementById("modal1");
+
+// Get the button that opens the modal
+var modalBtn = document.getElementById("modalBtn");
+
+// Get the span X element that closes the modal
+var span = document.getElementsByClassName("closeModal")[0];
+
+// When the user clicks on the loveCalc button, open modal
+modalBtn.addEventListener("click", function(){
+    modal.style.display = "block";
+    document.getElementById("response").textContent = "";
+});
+    
+// When the user clicks on span X, close modal
+span.addEventListener("click", function(){
+    modal.style.display = "none";
+});
+    
+// When user clicks anywhere outside of modal, close it
+window.addEventListener("click", function(event){
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+});
+
+// ********** MODAL CODE END **********
+
+
+// ********** QUOTE API CODE START **********
+
 // Let's get the data from the Quotes API:
 // Quote API variables:
 const API_KEY = '1aad9b257amsh8cea256130839a7p1e5326jsn1feba12d1c03'
@@ -8,19 +42,12 @@ const options = {
         'x-rapidapi-host': 'quotes15.p.rapidapi.com'
         }
     };
-const API = document.getElementById ("API1")
 
-const quoteApp = document.getElementById('quote');
-
-// Task list variables:
-const taskForm = document.getElementById('taskForm');
-const taskInput = document.getElementById('taskInput');
-const taskBtn = document.getElementById('taskBtn');
-const toDoField = document.getElementById('toDoField');
+// let's grab the html div that will contain the quote API:
+const quoteApp = document.getElementById('quoteApp');
 
 // Let's generate a random quote + author:
 function generateRandomQuote() {
-    quoteApp.innerHTML=""
     fetch('https://quotes15.p.rapidapi.com/quotes/random/', options)
         .then(response => response.json())
         .then(data => {
@@ -33,11 +60,23 @@ function generateRandomQuote() {
         quoteApp.append(author);
             console.log(quoteText, author);})  // data is locally scoped inside .then fcn so have to be inside .then to use data
 }
-API1.addEventListener("click",generateRandomQuote )
+
 // Let's call the previously defined fcn:
 generateRandomQuote();
 
+// ********** QUOTE API CODE END **********
+
+
+// ********** TASK LIST CODE START **********
+
 // Now let's dynamically create our task input fields and checkable-list & store locally:
+
+// Task list variables:
+const taskForm = document.getElementById('taskForm');
+const taskInput = document.getElementById('taskInput');
+const taskBtn = document.getElementById('taskBtn');
+const toDoField = document.getElementById('toDoField');
+
 function createTask(event) {
     event.preventDefault();  // prevented page refresh to fix bug of task immediately disappearing
     const task = taskInput.value;
@@ -56,11 +95,12 @@ function createTask(event) {
     const lineBr = document.createElement("br");
         toDoField.append(lineBr);
     // left to do in this fcn: save tasks + checked-or-not to local storage - not working
-        // PRoblem may be that label is being added as a KEY
+        // PRoblem may be that label is being added as key. 
+        // Need to create single task object that has text, key for is checked
     localStorage.setItem("task", JSON.stringify(task));
     console.log(task);  // every time you add a new task, its pushed to a task array (name + checked status) - update that and set item again
     localStorage.setItem("isChecked", JSON.stringify(labelInput.checked));
-    // if page is reloaded/refreshed, run refreshTasks fcn, otherwise stop here???
+    
 
 // CONFETTI CODE:
     const checkbox = labelInput;
@@ -69,12 +109,12 @@ function createTask(event) {
 
     checkbox.addEventListener("change", function(){
         if (this.checked) {
-            for (let i = 0; i < 100; i++) {
+            for (let i = 0; i < 400; i++) {
                 const confetti = document.createElement("div");
                 confetti.classList.add("confetti");
                 confettiContainer.appendChild(confetti);
 
-                // make confetti a random color from the color array:
+                // make confetti a random color from the color array; see CSS for colors:
                 confetti.classList.add(colors[Math.floor(Math.random()*colors.length)]);
                 confettiContainer.appendChild(confetti);
                 
@@ -86,3 +126,83 @@ function createTask(event) {
     })
 // END OF CONFETTI CODE
 };
+
+// Gotta add an event listener to the Create Task button:
+taskBtn.addEventListener("click", createTask);
+
+
+// ********** RICH PERSON CODE START **********
+
+let tableEl = document.querySelector('.table');
+
+async function richPeople() {
+    try {
+    // Fetching API
+    const res = await fetch("https://forbes400.onrender.com/api/forbes400/getAllBillionaires");
+    const data = await res.json();
+
+    // Creating the table
+    for (let i = 0; i < data.length; i++) {
+        
+    // tr = table with rows
+      const tr = document.createElement("tr");
+
+      // Create img table data
+      const imageTd = document.createElement("td");
+      const imgEl = document.createElement("img");
+      imageTd.appendChild(imgEl);
+      imgEl.src = data[i].squareImage;
+      tr.appendChild(imageTd);
+
+      // Create rank table data
+      const rankEl = document.createElement("td");
+      const rankP = document.createElement("p");
+      rankEl.innerText = `${data[i].rank}`;
+      rankEl.appendChild(rankP);
+      tr.appendChild(rankEl);
+
+      // Create name table data
+      const nameEl = document.createElement("td");
+      nameEl.innerText = data[i].personName;
+      tr.appendChild(nameEl);
+      
+      // Create networth table data
+      const netWorthEl = document.createElement("td");
+      const netNumEl = Math.floor(data[i].finalWorth);
+      const netStr = netNumEl.toString();
+      netWorthEl.innerText = `$${Number(netStr.slice(0,3))} Billion`;
+      tr.appendChild(netWorthEl);
+
+      // Create residence table data
+      const residenceEl = document.createElement("td");
+      residenceEl.innerText = data[i].countryOfCitizenship;
+      tr.appendChild(residenceEl);
+
+      // Create source table data
+      const sourceEl = document.createElement("td");
+      sourceEl.innerText = data[i].source;
+      tr.appendChild(sourceEl);
+
+      // Append all to table
+      tableEl.appendChild(tr);
+    }
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+/// Create two button of hide and reveal table data '
+
+let toggleButton = document.querySelector('.toggle-btn');
+let getresultEl = document.querySelector ('.getresult');
+//tableEl.style.display = "none";
+getresultEl.addEventListener('click', richPeople)
+toggleButton.addEventListener("click", function(){
+
+if (tableEl.style.display === "none") {
+   
+  tableEl.style.display = "table";
+}else {
+ tableEl.style.display = "none";
+  }
+ });

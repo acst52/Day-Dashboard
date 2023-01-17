@@ -1,25 +1,12 @@
 * {
-    margin: 0px;
+    margin: 3px;
     padding: 3px;
 }
 
-/* @import url('Google font URL here'); */
-
-
-body{
-    background-color: rgb(165, 165, 141);
-
-}
-
 section{
-    
-    
+    border-radius: 3px;
+    border: 2px solid red;
     background-color: rgb(255, 241, 230);
-}
-
-#welcome-message{
-    text-align: center;
-    padding-top: 15px;     
 }
 
 
@@ -33,31 +20,207 @@ section{
 }
 
 #movies{
-  
+  height: 250px;
 }
 
 #daily-tasks{
-   height: 300px;
-   
-}
-
-@media screen and (min-width: 640px) {
-    
-    
-    
-   
+   height: 545px;
 }
 
 
+body {
+    background-image: linear-gradient(to bottom right, rgb(255, 136, 62), rgb(255, 255, 104));
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    line-height: 3;
+/*     columns: 2; */
+    justify-content: center;
+}
 
+/* what do we want to be in the first body column? */
+/* let's have our quote span both columns at the top: */
+#quoteApp {
+/*     column-span: all; */
+    display: block;
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 3px 10px;
+    padding: 5px;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: medium;
+    border: 2px solid rgb(255, 105, 60);
+}
 
-
-
-
-/* @media screen and (max-width: 750px) {
-
+/* #taskForm {
+    grid-column: 1;
 } */
 
-/* @media screen and (max-width: 500px) {
+/* what do we want to be in the second body column? 
+    can change columns to 3 and set 3 columns if desired */
+/* #taskTitle 
+#toDoField {
+    grid-column: 2;
+} */
 
+fieldset {
+    line-height: 1.5;
+}
+
+button {
+    background-color: rgb(255, 153, 0);
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    padding: 8px 14px;
+}
+
+/* let's have our loveCalc button centerd across 
+    both columns at the bottom: */
+#modalBtn {
+/*     column-span: all;
+    display: block; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 30px;
+}
+/* CONFETTI CSS START */
+
+/* styles for the confetti elements */
+.confetti {
+    width: 9px;
+    height: 9px;
+    border-radius: 30%;
+    position: absolute;
+    top: -10px;
+}
+
+/* confetti colors array: */
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+.green {
+    background-color: rgb(9, 149, 9);
+}
+
+.blue {
+    background-color: rgb(21, 21, 251);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: rgb(255, 153, 0);
+}
+
+.purple {
+    background-color: blueviolet;
+}
+
+.pink {
+    background-color: rgb(214, 34, 157);
+}
+
+/* confetti animation */
+
+@keyframes fall {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+/* CONFETTI CSS END */
+
+
+/* MODAL CSS START */
+
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #e95dff;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+  
+/* Modal Content + slide-in animation */
+.modal-content {
+    position: relative;
+    background-color: #fbccfe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2),0 6px 20px 0 rgba(255, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* modal animation = slide in from top */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.closeModal {
+    color: rgb(164, 0, 223);
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.closeModal:hover,
+.closeModal:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #e95dff;
+    color: white;
+}
+
+/* MODAL CSS END */
+
+/* under 800px, make all content fit into 1 column by 
+    changing body column property: */
+
+/* @media screen and (max-width: 800px) {
+    body {
+        columns: 1;
+    }
+} */
+
+/* under 500 px, usually all phones, make content smaller: */
+/* @media screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    h2 {
+        font-size: 20px;
+    }
 } */
