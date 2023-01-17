@@ -3,17 +3,7 @@
     padding: 3px;
 }
 
-/* @import url('Google font URL here'); */
-
-
-body{
-    background-color: rgb(165, 165, 141);
-
-}
-
 section{
-    
-    
     background-color: rgb(255, 241, 230);
 }
 
@@ -33,34 +23,22 @@ section{
 
 #daily-tasks{
    height: 545px;
-   
-   
 }
 
-* {
-    margin: 3px;
-    padding: 3px;
-}
 
-/* temporary grey background for ease on eyes */
 body {
     background-image: linear-gradient(to bottom right, rgb(255, 136, 62), rgb(255, 255, 104));
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     line-height: 3;
-    columns: 2;
-    /* display: flex; */
+/*     columns: 2; */
     justify-content: center;
-    /* -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); */
-    /* -webkit-transform: scaleY(-1);
-    transform: scaleY(-1); */
 }
 
 /* what do we want to be in the first body column? */
 /* let's have our quote span both columns at the top: */
 #quoteApp {
-    column-span: all;
+/*     column-span: all; */
     display: block;
     text-align: center;
     /* margin-left: auto;
@@ -72,16 +50,16 @@ body {
     border: 2px solid rgb(255, 105, 60);
 }
 
-#taskForm {
+/* #taskForm {
     grid-column: 1;
-}
+} */
 
 /* what do we want to be in the second body column? 
     can change columns to 3 and set 3 columns if desired */
-#taskTitle 
+/* #taskTitle 
 #toDoField {
     grid-column: 2;
-}
+} */
 
 fieldset {
     line-height: 1.5;
@@ -98,8 +76,8 @@ button {
 /* let's have our loveCalc button centerd across 
     both columns at the bottom: */
 #modalBtn {
-    column-span: all;
-    display: block;
+/*     column-span: all;
+    display: block; */
     margin-left: auto;
     margin-right: auto;
 }
