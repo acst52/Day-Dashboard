@@ -208,14 +208,14 @@ h2 {
 /* under 800px, make all content fit into 1 column by 
     changing body column property: */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     body {
         columns: 1;
     }
-}
+} */
 
 /* under 500 px, usually all phones, make content smaller: */
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     body {
         font-size: 14px;
         line-height: 1.5;
@@ -223,4 +223,4 @@ h2 {
     h2 {
         font-size: 20px;
     }
-}
+} */
