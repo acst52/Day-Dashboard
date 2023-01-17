@@ -1,7 +1,7 @@
 
 let tableEl = document.querySelector('.table');
 
-(async function richPeople() {
+async function richPeople() {
     try {
     // Fetching API
     const res = await fetch("https://forbes400.onrender.com/api/forbes400/getAllBillionaires");
@@ -54,19 +54,23 @@ let tableEl = document.querySelector('.table');
   } catch (err) {
     console.error(err);
   }
-})();
+};
 
-/// Create hide and reveal table 'toggle button '
+/// Create two button of hide and reveal table data '
 
-let toggleButton = document.getElementById('.toggle-btn');
-
+let toggleButton = document.querySelector('.toggle-btn');
+let getresultEl = document.querySelector ('.getresult');
 //tableEl.style.display = "none";
+getresultEl.addEventListener('click', richPeople)
+toggleButton.addEventListener("click", function(){
 
-//toggleButton.addEventListener("click"), function() {
-   // if (tableEl.style.display === "none") {
+if (tableEl.style.display === "none") {
    
-      //tableEl.style.display = "table";
-   //} else {
-   //  tableEl.style.display = "none";
-  //  }
- // };
+  tableEl.style.display = "table";
+}else {
+ tableEl.style.display = "none";
+  }
+ });
+
+ 
+   // 
