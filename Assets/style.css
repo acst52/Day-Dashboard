@@ -45,66 +45,7 @@ section{
     
     
     
-
    
-
-    #welcome-message2{
-        display: flex;
-        height: 50px;
-        margin: 0px 20px 0px 20px;
-        background-color: rgb(255, 241, 230);
-        text-align: center;
-        padding-top: 15px; 
-    }
-    
-    .flex-row2{
-        display: flex;
-        
-    }
-
-    #column-one{
-        width: 30%;
-    }
-
-    #column-two{
-        width: 70%;
-        
-        
-    }
-    
-    #quoteApp2{
-        display:block;
-        height: 50px;
-       
-        background-color: rgb(255, 241, 230);
-        text-align: center;
-        padding-top: 15px;
-    }
-    
-    #mood2{
-        display: block;
-        height: 300px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        flex-grow: 1;
-    }
-    
-    #horoscope2{
-        display:block;
-        height: 300px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        flex-grow: 2;
-        margin-left: 20px;
-    }
-    
-    #daily-tasks2{
-        display:block;
-        height: 670px;
-        margin-bottom: 20px;
-        
-           
-    }
 }
 
 
