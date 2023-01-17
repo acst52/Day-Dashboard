@@ -5,27 +5,19 @@
 
 section{
     border-radius: 3px;
-    border: 2px solid red;
-    background-color: rgb(255, 241, 230);
+    border: 3px solid white; 
 }
 
-
-#quoteApp{
-    text-align: center;
-    padding-top: 15px;   
-}
 
 #mood{
     height:250px;
 }
 
-#movies{
-  height: 250px;
-}
-
 #daily-tasks{
    height: 545px;
+   padding: 0px 0px 0px 20px;
 }
+
 
 
 body {
@@ -41,15 +33,18 @@ body {
 /* let's have our quote span both columns at the top: */
 #quoteApp {
 /*     column-span: all; */
-    display: block;
+   
     text-align: center;
     /* margin-left: auto;
     margin-right: auto; */
     margin: 3px 10px;
     padding: 5px;
     font-family: 'La Belle Aurore', cursive;
-    font-size: medium;
-    border: 2px solid rgb(255, 105, 60);
+    font-size: x-large;
+    border: none;
+    line-height: 2;
+    
+    
 }
 
 /* #taskForm {
@@ -73,6 +68,7 @@ button {
     text-align: center;
     border: none;
     padding: 8px 14px;
+    border-radius: 5px;
 }
 
 /* let's have our loveCalc button centerd across 
@@ -129,6 +125,20 @@ h2 {
 
 /* confetti animation */
 
+/*Richest Person API styling*/
+
+.toggle-btn{
+   background-color: rgb(245, 140, 65);
+    padding: 2px 10px 2px 10px;
+    margin-left: 50px;
+    border: 2px solid white;  
+}
+
+#richestPeople{
+    padding: 20px;
+    height: 250px;
+}
+
 @keyframes fall {
     from {
         transform: translateY(-10px);
@@ -155,6 +165,8 @@ h2 {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4);
 }
+
+
 
 .modal-header {
     padding: 2px 16px;
@@ -201,6 +213,24 @@ h2 {
     padding: 2px 16px;
     background-color: #e95dff;
     color: white;
+    margin-top: 10px;
+}
+
+#modalNameInput1{
+    width: 95%;
+    border-radius: 5px;
+}
+
+#modalNameInput2{
+    width: 95%;
+    border-radius: 5px;
+}
+
+#loveCalc{
+    background-color: white;
+    color:#e95dff;
+    margin-bottom: 10px;
+    padding: 1px 10px 1px 10px;
 }
 
 /* MODAL CSS END */
