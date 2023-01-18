@@ -4,11 +4,8 @@
     box-sizing: border-box;
   }
   
-  html {
-    
-  }
-  
   body {
+    min-height: 100%;
     line-height: 1;
     font-family: sans-serif;
   }
