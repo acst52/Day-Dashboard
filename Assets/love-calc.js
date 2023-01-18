@@ -4,17 +4,12 @@ const loveCalc = document.getElementById('loveCalc');
 
 function generateLoveCalc() {
     // need to validate modal input to make sure there is at least 1 letter in each box
-    // then remove any spaces from user input,
-    // THEN the 2 names need to appear below w/ the % + result sentence. Maybe heart icon btwn names.
-// from modal code section:
-const nameValue1 = document.getElementById("modalNameInput1").value;
+    // then remove any spaces from user input using [...].value.trim();
+const nameValue1 = document.getElementById("modalNameInput1").value.trim();
 console.log(nameValue1); 
 
-const nameValue2 = document.getElementById("modalNameInput2").value;
+const nameValue2 = document.getElementById("modalNameInput2").value.trim();
 console.log(nameValue2);
-
-// const nameValue1 = 'Name 1';
-// const nameValue2 = 'Name 2';
 
 const optionsLove = {
 	method: 'GET',
@@ -29,12 +24,6 @@ fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${nameValue1}&
     .then(response => {
         console.log(response);
         document.getElementById('response').textContent = `Love percentage between ${response.sname} and ${response.fname} is ${response.percentage}%. ${response.result}`;
-    })
-    // .then(data => {   // Update modal content with data from API
-    //     console.log(data.sname);
-    //     // document.getElementById('modal-body').innerHTML = "";
-    //     // document.getElementById('modal-body').textContent = `Love percentage between ${nameValue1} and ${nameValue2} is ${data.percentage}%`;
-    //   })
       .catch(error => console.error(error));
 };
 
