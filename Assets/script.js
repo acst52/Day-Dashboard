@@ -141,7 +141,7 @@ let getresultEl = document.querySelector ('.getresult');
 //tableEl.style.display = "none";
 getresultEl.addEventListener('click', function(){
  
-  window.open("./rich.html",'_blank')
+  window.open("../rich.html",'_blank')
 
 });
 toggleButton.addEventListener("click", function(){
