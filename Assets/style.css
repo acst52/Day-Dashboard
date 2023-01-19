@@ -60,19 +60,17 @@ fieldset {
 
 /*All Buttons */
 button {
-    background-color: rgb(255, 153, 0);
-    font-size: 20px;
+    background-color: rgb(255, 153, 0) !important;
+    font-size: 15px !important;
     text-align: center;
-    border: none;
-    padding: 8px 14px;
+    padding: 3px 6px !important;
     border-radius: 5px;
+    border:3px solid rgb(245, 140, 65);
 }
 
 /*Love Calc Button */
 #modalBtn {
-    margin-left: 150px;
-    margin-top: 70px;
-    
+      
 }
 
 h2 {
@@ -126,7 +124,6 @@ h2 {
 .toggle-btn{
    background-color: rgb(245, 140, 65);
     padding: 2px 10px 2px 10px;
-    margin-left: 50px;
     border: 2px solid white;  
 }
 

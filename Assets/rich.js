@@ -7,7 +7,14 @@ let tableEl = document.querySelector('.table');
     const data = await res.json();
 
     // Creating the table
+<<<<<<< HEAD
     let limit =20;
+=======
+     
+        let limit =20;
+        
+    
+>>>>>>> origin/develop
     for (let i = 0; i < data.length && i<limit; i++) {
 
       const tr = document.createElement("tr");
