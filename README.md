@@ -43,7 +43,7 @@ The following animation (image) demonstrates the application functionality (look
 To add a local system to a Git repository, you can use the "git clone" command. This command creates a copy of the repository on your local system and links it to the remote repository. To use the command, open a terminal or command prompt and navigate to the directory where you want to create the local copy of the repository. Then, run the following command:
 
 
-**$ git clone https://github.com/acst52/Day-Dashboard.git
+**$ git clone https://github.com/acst52/Day-Dashboard.git**
 
 
 **$ cd Day-Dashboard.git
