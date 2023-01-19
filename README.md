@@ -37,22 +37,40 @@ The following animation (image) demonstrates the application functionality (look
 
 
 
-## Local System Developement Process:-
+## Local System to git repository and adding codes :-
+
 
 To add a local system to a Git repository, you can use the "git clone" command. This command creates a copy of the repository on your local system and links it to the remote repository. To use the command, open a terminal or command prompt and navigate to the directory where you want to create the local copy of the repository. Then, run the following command:
 
 
-$ git clone https://github.com/acst52/Day-Dashboard.git
+**$ git clone https://github.com/acst52/Day-Dashboard.git
 
 
-$ cd Day-Dashboard.git
+**$ cd Day-Dashboard.git
 
 
-& ls -a 
+**& ls -a 
+
+The command will create a new directory with the same name as the remote repository and will copy all of the files from the remote repository into the new directory. You can then make changes to the files in the local repository and use Git commands to commit and push those changes back to the remote repository.
+
+**git add: 
+
+Use this command to stage the changes that you want to commit. You can specify specific files or directories. 
+
+**git commit: 
+
+git commit -m "Commit message describing the changes"
+
+Use this command to commit the staged changes to the local repository. It is a good practice to include a commit message describing the changes that you made.
+
+**git push: 
+
+Use this command to push the committed changes to the remote repository. 
 
 
 
 ## Technologies used:
+
 HTML 
 
 CSS 
