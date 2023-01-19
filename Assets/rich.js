@@ -8,7 +8,7 @@ let tableEl = document.querySelector('.table');
 
     // Creating the table
      
-        let limit =20;
+    let limit =20;
         
     
     for (let i = 0; i < data.length && i<limit; i++) {
