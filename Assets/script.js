@@ -94,13 +94,11 @@ function createTask(event) {
     // want tasks to generate on separate lines / vertically, not horiz, every time the fcn runs i.e. every time a task is added
     const lineBr = document.createElement("br");
         toDoField.append(lineBr);
-    // left to do in this fcn: save tasks + checked-or-not to local storage - not working
-        // PRoblem may be that label is being added as key. 
-        // Need to create single task object that has text, key for is checked
-    localStorage.setItem("task", JSON.stringify(task));
-    console.log(task);  // every time you add a new task, its pushed to a task array (name + checked status) - update that and set item again
-    localStorage.setItem("isChecked", JSON.stringify(labelInput.checked));
-    
+    // now let's save an array of user tasks to local storage:
+     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    // add new tasks to array:
+        tasks.push(task);
+        localStorage.setItem('tasks', JSON.stringify(tasks));
 
 // CONFETTI CODE:
     const checkbox = labelInput;
@@ -130,6 +128,20 @@ function createTask(event) {
 // Gotta add an event listener to the Create Task button:
 taskBtn.addEventListener("click", createTask);
 
+// ********** RENDER TASKS FROM LOCAL STORAGE START **********
+
+window.onload = function() {
+    // get tasks out of local storage:
+    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    // render them on the page:
+    tasks.forEach(function(task) {
+        const pastTask = document.createElement("div");
+        pastTask.innerText = task;
+        toDoField.append(pastTask);
+    })
+};
+
+// ********** RENDER TASKS FROM LOCAL STORAGE END **********
 
 // ********** RICH PERSON CODE START **********
 
