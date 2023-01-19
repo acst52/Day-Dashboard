@@ -18,14 +18,15 @@
     
 <main>
 <!-- sets grid for positioning of elements: -->
-<div class=" grid grid-cols-6 gap-4">
+<div class=" grid grid-cols-6 ga p-4">
     
 <!-- section that contains Quote API -->
-<section id="quoteApp" class=" md:text-4xl col-start-1 col-span-6"></section>
+<section id="quoteApp" class=" text-sm col-start-1 col-span-6 md:text-lg"></section>
 
 <!-- section that contains love calculator API inside modal -->
-<section id="loveCalculator" class="row-start-2 col-span-6 md:row-start-6 md:col-span-3 ">
-<!-- button to trigger loveCalc modal:  -->
+<section id="loveCalculator" class="text-sm row-start-2 col-span-6 md:text-lg md:row-start-6 md:col-span-2 ">
+    <p>Is love in the air?</p>
+    <!-- button to trigger loveCalc modal:  -->
     <button id="modalBtn">Love Calculator</button>
     <div id="modal1" class="modal1">
 <!-- modal div content: -->
@@ -50,14 +51,14 @@
 </div>
 </section>
 
-<section id="richestPeople" class="row-start-3 col-span-6 md:col-span-3 md: row-span-2 md:row-start-6 "><h1>Are you the richest person yet?</h1>
+<section id="richestPeople" class=" text-sm row-start-3 col-span-6 md:text-lg md:col-span-2 md: row-span-2 md:row-start-6 "><h1>Are you the rich?</h1>
         <table>
             <button class="getresult">Click here to see!</button>
             <a class="redirect"href="./rich.html" target="_blank"></a>
         </table>
 </section>
                     
-<section id="daily-tasks" class="row-start-6 col-span-6 md:row-start-2 md:row-span-3 md:col-span-6 "><h1>Daily Tasks</h1>
+<section id="daily-tasks" class="text-sm row-start-5 col-span-6 md:text-lg md:row-start-2 md:row-span-3 md:col-span-6 "><h1>Daily Tasks</h1>
 
 <!-- BEGINNING OF TASK LIST ELEMENTS -->
 
@@ -77,8 +78,14 @@
         <div id="confetti-container"></div>
     </fieldset>
 
+
 <!-- END OF TASK LIST ELEMENTS -->
 
+</section>
+
+<section id="jokeAPI" class=" text-sm md:text-lg row-start-6 col-span-6 md: col-span-2">
+    <h1>Jokes</h1>
+    <button></button>
 </section>
             
 </div>

@@ -24,9 +24,9 @@ fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${nameValue1}&
     .then(response => {
         console.log(response);
         document.getElementById('response').textContent = `Love percentage between ${response.sname} and ${response.fname} is ${response.percentage}%. ${response.result}`;
-      .catch(error => console.error(error));
-};
-
+    
+}) .catch(error => console.error(error));
+}
 loveCalc.addEventListener("click", generateLoveCalc); // dont need parentheses that execute fcn in event listener!
 
 // END OF LOVE CALC API CODE

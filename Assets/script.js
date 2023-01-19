@@ -148,7 +148,7 @@ window.onload = function() {
 let tableEl = document.querySelector('.table');
 
 
-let toggleButton = document.querySelector('.toggle-btn');
+//let toggleButton = document.querySelector('.toggle-btn');
 let getresultEl = document.querySelector ('.getresult');
 //tableEl.style.display = "none";
 getresultEl.addEventListener('click', function(){
@@ -156,7 +156,7 @@ getresultEl.addEventListener('click', function(){
   window.open("../rich.html",'_blank')
 
 });
-toggleButton.addEventListener("click", function(){
+/*toggleButton.addEventListener("click", function(){
 
 if (tableEl.style.display === "none") {
    
@@ -164,4 +164,4 @@ if (tableEl.style.display === "none") {
 }else {
  tableEl.style.display = "none";
   }
- });
+ }); */
