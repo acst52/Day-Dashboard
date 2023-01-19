@@ -37,7 +37,7 @@ The following animation (image) demonstrates the application functionality (look
 
 
 
-##Local System Developement Process:-
+## Local System Developement Process:-
 
 $ git clone https://github.com/acst52/Day-Dashboard.git
 $ cd Day-Dashboard.git
@@ -45,7 +45,7 @@ $ cd Day-Dashboard.git
 
 
 
-##Technologies used:
+## Technologies used:
 HTML 
 CSS 
 Tailwind 
