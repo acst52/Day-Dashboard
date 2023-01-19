@@ -156,12 +156,12 @@ getresultEl.addEventListener('click', function(){
   window.open("../rich.html",'_blank')
 
 });
-toggleButton.addEventListener("click", function(){
+// toggleButton.addEventListener("click", function(){
 
-if (tableEl.style.display === "none") {
+// if (tableEl.style.display === "none") {
    
-  tableEl.style.display = "table";
-}else {
- tableEl.style.display = "none";
-  }
- });
+//   tableEl.style.display = "table";
+// }else {
+//  tableEl.style.display = "none";
+//   }
+//  });
