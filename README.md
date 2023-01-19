@@ -68,6 +68,9 @@ Use this command to commit the staged changes to the local repository. It is a g
 Use this command to push the committed changes to the remote repository. 
 
 
+git push origin (branch-name). 
+
+
 
 ## Technologies used:
 
