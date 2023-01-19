@@ -27,9 +27,6 @@ body {
     margin-right: 3px;
     padding-left: 20px;
     background-color: rgba(255, 255, 255, 0.2);
-    
-    
-    
 }
 
 #daily-tasks{
@@ -43,9 +40,6 @@ body {
     margin-left: 3px;
     margin-right: 3px;
     padding-left: 20px;
-    
-    
-       
 }
 
 #quoteApp {
@@ -54,9 +48,7 @@ body {
     margin-right: 3px;
     padding: 5px;
     font-family: 'La Belle Aurore', cursive; 
-    
 }
-
 
 
 fieldset {
@@ -75,10 +67,8 @@ button {
 
 /*Love Calc Button */
 
-
 #modalBtn {
     margin-bottom: 3px;
-    
 }
 
 h2 {
@@ -230,5 +220,3 @@ h2 {
     padding: 1px 10px 1px 10px;
     border: 2px solid #e95dff;
 }
-
-
