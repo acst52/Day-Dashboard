@@ -39,8 +39,13 @@ The following animation (image) demonstrates the application functionality (look
 
 ## Local System Developement Process:-
 
+
 $ git clone https://github.com/acst52/Day-Dashboard.git
+
+
 $ cd Day-Dashboard.git
+
+
 & ls -a 
 
 
