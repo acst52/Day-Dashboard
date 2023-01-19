@@ -52,9 +52,15 @@ $ cd Day-Dashboard.git
 
 ## Technologies used:
 HTML 
+
 CSS 
+
 Tailwind 
-Vanilla Javascript
+
+
+Javascript
+
+
 JQuery
 
 
@@ -63,8 +69,11 @@ JQuery
 
 ## Project Team :
 Alexia
+
 Ashley 
+
 Mohamed
+
 Felix 
 
 
