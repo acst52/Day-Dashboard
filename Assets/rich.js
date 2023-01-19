@@ -14,7 +14,6 @@ let tableEl = document.querySelector('.table');
         let limit =20;
         
     
->>>>>>> origin/develop
     for (let i = 0; i < data.length && i<limit; i++) {
 
       const tr = document.createElement("tr");
