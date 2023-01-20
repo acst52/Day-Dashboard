@@ -1,112 +1,79 @@
-* {
-    margin: 0px;
-    padding: 3px;
+
+section {
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
-/* @import url('Google font URL here'); */
-
-
-body{
-    background-color: rgb(165, 165, 141);
-
-}
-
-section{
-    
-    
-    background-color: rgb(255, 241, 230);
-}
-
-#welcome-message{
-    text-align: center;
-    padding-top: 15px;     
-}
-
-
-#quoteApp{
-    text-align: center;
-    padding-top: 15px;   
-}
-
-#mood{
-    height:250px;
-}
-
-#movies{
-  
-}
-
-
-/* MODAL CSS START */
-
-.modal1 {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%;
+body {
+    background-image: linear-gradient(to bottom right, rgb(255, 136, 62), rgb(255, 255, 104));
+    background-repeat: no-repeat;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    line-height: 3;
+    justify-content: center;
+    
 }
 
-.modal-header {
-    padding: 2px 16px;
-    background-color: #ff5de1;
-    color: white;
+/* Richest Person Button */
+.getresult{
+    margin: 0;
 }
 
-.modal-body {padding: 2px 16px;}
-  
-/* Modal Content + slide-in animation */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 300px;
-    box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2),0 6px 20px 0 rgba(255, 0, 0, 0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
+/*Contents of Sections */
+#loveCalculator{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
-
-/* modal animation = slide in from top */
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-.closeModal {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-  
-.closeModal:hover,
-.closeModal:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #ff5de1;
-    color: white;
-}
-
-/* MODAL CSS END */
-
 
 #daily-tasks{
-   height: 300px;
+   padding: 0px 0px 0px 20px;
+   margin-left: 3px;
+   margin-right: 3px;
    
 }
 
+#richestPeople{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-left: 20px;
+}
+
+#quoteApp {
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 5px;
+    font-family: 'La Belle Aurore', cursive; 
+}
+
+
+fieldset {
+    line-height: 1.5;
+}
+
+/*All Buttons */
+button {
+    background-color: rgb(255, 153, 0) !important;
+    font-size: 15px !important;
+    text-align: center;
+    padding: 3px 6px !important;
+    border-radius: 10px;
+    border:3px solid rgb(245, 140, 65);
+}
+
+/*Love Calc Button */
+
+#modalBtn {
+    margin-bottom: 3px;
+}
+
+h2 {
+    font-size: 30px;
+}
 
 /* CONFETTI CSS START */
 
@@ -150,6 +117,14 @@ section{
 
 /* confetti animation */
 
+/*Richest Person API styling*/
+
+.toggle-btn{
+   background-color: rgb(245, 140, 65);
+    padding: 2px 10px 2px 10px;
+    border: 2px solid white;  
+}
+
 @keyframes fall {
     from {
         transform: translateY(-10px);
@@ -161,80 +136,87 @@ section{
 
 /* CONFETTI CSS END */
 
+/* MODAL CSS START */
 
-@media screen and (min-width: 640px) {
-    
-    
-    
-
-   
-
-    #welcome-message2{
-        display: flex;
-        height: 50px;
-        margin: 0px 20px 0px 20px;
-        background-color: rgb(255, 241, 230);
-        text-align: center;
-        padding-top: 15px; 
-    }
-    
-    .flex-row2{
-        display: flex;
-        
-    }
-
-    #column-one{
-        width: 30%;
-    }
-
-    #column-two{
-        width: 70%;
-        
-        
-    }
-    
-    #quoteApp2{
-        display:block;
-        height: 50px;
-       
-        background-color: rgb(255, 241, 230);
-        text-align: center;
-        padding-top: 15px;
-    }
-    
-    #mood2{
-        display: block;
-        height: 300px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        flex-grow: 1;
-    }
-    
-    #horoscope2{
-        display:block;
-        height: 300px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        flex-grow: 2;
-        margin-left: 20px;
-    }
-    
-    #daily-tasks2{
-        display:block;
-        height: 670px;
-        margin-bottom: 20px;
-        
-           
-    }
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
 }
 
+/*Styled Model Header*/
+.modal-header {
+    padding: 2px 16px;
+    background-color: #e95dff;
+    color: white;
+}
 
+.modal-body {padding: 2px 16px;}
+  
+/* Modal Content + slide-in animation */
+.modal-content {
+    position: relative;
+    background-color: #fbccfe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2),0 6px 20px 0 rgba(255, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
 
+/* modal animation = slide in from top */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
 
-/* @media screen and (max-width: 750px) {
+.closeModal {
+    color: rgb(164, 0, 223);
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.closeModal:hover,
+.closeModal:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
 
-} */
+/*Styled Modal Elements*/
 
-/* @media screen and (max-width: 500px) {
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #e95dff;
+    color: white;
+    margin-top: 10px;
+}
 
-} */
+#modalNameInput1{
+    width: 95%;
+    border-radius: 5px;
+}
+
+#modalNameInput2{
+    width: 95%;
+    border-radius: 5px;
+}
+
+/*Styled Modal Button*/
+#loveCalc{
+    background-color: white !important;
+    color:#e95dff;
+    margin-bottom: 10px;
+    padding: 1px 10px 1px 10px;
+    border: 2px solid #e95dff;
+}
