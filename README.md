@@ -30,9 +30,8 @@ WHEN I am idle waiting for an appointment, on hold or simply bored
 THEN I can use the love calculator, joke and activity generating APIs
 ```
 
-The following images demonstrate the application look:
+The following image demonstrates the general look of the application:
 ![Screensnip 1 of day dashboard](https://user-images.githubusercontent.com/116177485/213757966-b7b5acef-115f-4fc8-9321-a113a0a7942e.png)
-![Screensnip 2 of day dashboard](https://user-images.githubusercontent.com/116177485/213758068-6f2855f1-48c2-4e66-a0d7-c42e7d9af994.png)
 
 ### Technologies used: 
 Tailwind, Vanilla Javascript, JQuery, CSS.
