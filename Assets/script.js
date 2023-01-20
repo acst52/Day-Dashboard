@@ -94,6 +94,8 @@ function createTask(event) {
     // want tasks to generate on separate lines / vertically, not horiz, every time the fcn runs i.e. every time a task is added
     const lineBr = document.createElement("br");
         toDoField.append(lineBr);
+    // clear out the input field, ready for next input:
+        taskInput.value = "";
     // now let's save an array of user tasks to local storage:
      let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
     // add new tasks to array:
