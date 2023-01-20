@@ -32,3 +32,22 @@ WHEN I close my browser, my to-do list is stored locally
 ```
 
 The following animation (image) demonstrates the application functionality (look):
+
+## Technologies used:
+
+**HTML
+
+We use to structure and layout of a web page, including headings, paragraphs, images, and links.
+
+**CSS
+
+We used to style and design our website from its structure, making it easier to maintain and updateand response.
+
+**avaScript
+
+used to design and manipulation of HTML and CSS, and can be used to create dynamic web applications.
+
+**jQuery
+
+used for writing JavaScript code by providing pre-written functions and methods for common tasks. It allows us to easily select and manipulate elements on a web page, handle events, and create animations, among other things.
+
