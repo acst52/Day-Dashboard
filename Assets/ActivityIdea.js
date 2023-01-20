@@ -4,7 +4,7 @@ console.log(idea)
 
 function generateactivitiesIdea() {
 
-    fetch("http://www.boredapi.com/api/activity/",{
+    fetch("https://www.boredapi.com/api/activity/",{
 cache: 'reload',
 })
   .then(function (response) {
