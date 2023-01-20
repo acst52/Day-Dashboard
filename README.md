@@ -1,6 +1,6 @@
 # Day-Dashboard - Group Project 1!
 
-Hi and welcome to our README for the first group project! This proposal outlines a day dashboard that users can visit to get an overview of their time, whether it be their day, week or month. Users can write in checklists of tasks or items to buy, check them off, gain some motivation from a random quote, and interact with cute elements including a random joke generator and love calculator. *Start your day off right with day dashboard!*
+Hi and welcome to our README for the first group project! This proposal outlines a day dashboard that users can visit to get an overview of their time, whether it be their day, week or month. Users can write in checklists of tasks or items to buy, check them off, gain some motivation from a random quote, and interact with cute elements including a random joke generator and love calculator. [*(click here to start your day off right with day-dashboard!)*](https://acst52.github.io/Day-Dashboard/)
 
 ### Motivation
 The motivation for this application is to provide users a place to write down their to-do lists that is aesthetic and satisfying to promote motivation and productivity.
