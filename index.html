@@ -1,103 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Day Dashboard</title>
-        <!-- Added Google Fonts: Quicksand, in light 300 & semibold 600 + La Belle Aurore for Quote -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
-        <!-- stylesheets & tailwind linked here: -->
-        <link rel="stylesheet" href="./Assets/reset.css" />
-        <link rel="stylesheet" href="./Assets/style.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body>
-    
-<main>
-<!-- sets grid for positioning of elements: -->
-<div class="grid grid-cols-6 gap-4">
-    
-<!-- section that contains Quote API -->
-<section id="quoteApp" class=" text-sm col-start-1 col-span-6 md:text-lg"></section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day Dashboard</title>
+    <!-- Added Google Fonts: Quicksand, in light 300 & semibold 600 + La Belle Aurore for Quote -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Quicksand:wght@300;600&display=swap"
+        rel="stylesheet">
+    <!-- stylesheets & tailwind linked here: -->
+    <link rel="stylesheet" href="./Assets/reset.css" />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <!-- sets grid for positioning of elements: -->
+        <div class=" grid grid-cols-6 ga p-4">
 
-<!-- section that contains love calculator API inside modal -->
-<section id="loveCalculator" class="text-sm row-start-2 col-span-6 md:text-lg md:row-start-6 md:col-span-2 ">
-    <p>Is love in the air?</p>
-    <!-- button to trigger loveCalc modal:  -->
-    <button id="modalBtn">Love Calculator</button>
-    <div id="modal1" class="modal1">
-<!-- modal div content: -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="closeModal">&times;</span>
-            <h2>Want today's love forecast?</h2>
+            <!-- section that contains Quote API -->
+            <section id="quoteApp" class=" text-sm col-start-1 col-span-6 md:text-lg"></section>
+            <!-- section that contains JokesAPI -->
+            <section id="jokeAPI" class=" text-sm col-start-1 col-span-6 md:text-lg">
+                <p id="setup"></p>
+                <h5 id="punchline"></h5>
+                <!--Joke refresh  -->
+                <div>
+                    <button id="Jokebutton">Generate a joke</button>
+                </div>
+            </section>
+            <!-- section that contains Activity Idea API -->
+            <section id="ActivityAPI"
+                class="  text-sm row-start-3 col-span-6 md:text-lg md:col-span-2 md: row-span-2 md:row-start-6 ">
+                <p id="Idea"></p>
+                <!-- Activity refresh -->
+                <div>
+                    <button id="activitybutton">Generate an activity suggestion</button>
+                </div>
+            </section>
+            <!-- section that contains love calculator API inside modal -->
+            <section id="loveCalculator"
+                class="text-sm row-start-2 col-span-6 md:text-lg md:row-start-6 md:col-span-2 ">
+                <p>Is love in the air?</p>
+                <!-- button to trigger loveCalc modal:  -->
+                <button id="modalBtn">Love Calculator</button>
+                <div id="modal1" class="modal1">
+                    <!-- modal div content: -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="closeModal">&times;</span>
+                            <h2>Want today's love forecast?</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Enter your first name: </p>
+                            <input type="text" id="modalNameInput1" />
+                            <p>What is your partner's / crush's first name? </p>
+                            <input type="text" id="modalNameInput2" />
+                            <p id="response"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Save your names to see your Love Compatibility for the day!</h3>
+                            <button id="loveCalc">Is love in the air?</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="richestPeople"
+                class=" text-sm row-start-3 col-span-6 md:text-lg md:col-span-2 md: row-span-2 md:row-start-6 ">
+                <h1>Are you rich?</h1>
+                <table>
+                    <button class="getresult">Click here to see!</button>
+                    <a class="redirect" href="./rich.html" target="_blank"></a>
+                </table>
+            </section>
+
+            <section id="daily-tasks"
+                class="text-sm row-start-5 col-span-6 md:text-lg md:row-start-2 md:row-span-3 md:col-span-6 ">
+                <h1>Daily Tasks</h1>
+
+                <!-- BEGINNING OF TASK LIST ELEMENTS -->
+
+                <!-- task list elements -->
+                <div id="formContainer">
+                    <form id="taskForm">
+                        <h2>Create a Task: </h2>
+                        <input type="text" id="taskInput" />
+                        <button type="submit" id="taskBtn">Create Task</button>
+                    </form>
+                    <br />
+                </div>
+                <h2>Daily Tasks</h2>
+                <fieldset id="toDoField">
+                    <legend>To-do List: </legend>
+                    <!-- confetti div -->
+                    <div id="confetti-container"></div>
+                </fieldset>
+                <!-- END OF TASK LIST ELEMENTS -->
+            </section>
         </div>
-        <div class="modal-body">
-            <p>Enter your first name: </p>
-            <input type="text" id="modalNameInput1" /> 
-            <p>What is your partner's / crush's first name? </p>
-            <input type="text" id="modalNameInput2" />
-            <p id="response"></p>
-        </div>
-        <div class="modal-footer">
-            <h3>Save your names to see your Love Compatibility for the day!</h3>
-            <button id="loveCalc">Is love in the air?</button>
-        </div>
-    </div>
-
-</div>
-</section>
-
-<section id="richestPeople" class=" text-sm row-start-3 col-span-6 md:text-lg md:col-span-2 md: row-span-2 md:row-start-6 "><h1>Are you the rich?</h1>
-        <table>
-            <button class="getresult">Click here to see!</button>
-            <a class="redirect"href="./rich.html" target="_blank"></a>
-        </table>
-</section>
-                    
-<section id="daily-tasks" class="text-sm row-start-5 col-span-6 md:text-lg md:row-start-2 md:row-span-3 md:col-span-6 "><h1>Daily Tasks</h1>
-
-<!-- BEGINNING OF TASK LIST ELEMENTS -->
-
-<!-- task list elements -->
-    <div id="formContainer">
-        <form id="taskForm">
-            <h2>Create a Task: </h2>
-            <input type="text" id="taskInput" />
-            <button type="submit" id="taskBtn">Create Task</button>
-        </form>
-        <br />
-    </div>
-        <h2>Daily Tasks</h2>
-    <fieldset id="toDoField">
-        <legend>To-do List: </legend>
-    <!-- confetti div -->
-        <div id="confetti-container"></div>
-    </fieldset>
-
-
-<!-- END OF TASK LIST ELEMENTS -->
-
-</section>
-
-<!-- <section id="jokeAPI" class=" text-sm md:text-lg row-start-6 col-span-6 md: col-span-2">
-    <h1>Jokes</h1>
-    <button></button>
-</section> -->
-            
-</div>
- 
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-        crossorigin="anonymous"></script>
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="./Assets/script.js"></script>
     <script src="./Assets/love-calc.js"></script>
+    <script src="./Assets/JokesAPI.js"></script>
+    <script src="./Assets/ActivityIdea.js"></script>
 
-    </body>
+
+
+</body>
+
 </html>
