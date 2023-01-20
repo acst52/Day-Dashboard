@@ -2,16 +2,16 @@
 
 Hi and welcome to our README for the first group project! This proposal outlines a day dashboard that users can visit to get an overview of their time, whether it be their day, week or month. Users can write in checklists of tasks or items to buy, check them off, gain some motivation from a random quote, and see a calendar that has holidays blocked off based on their region. Users can interact with cute elements including selecting their daily mood, write down their thoughts etc all in a calming visually pleasing application. The color and mood of the application changes based on time of day (sunrise, sunset)
 
-Motivation
+### Motivation
 The motivation for this application is to provide users a place to write down their to-do lists that is aesthetic and satisfying to promote motivation and productivity.
 
 
 ## User Story
 
 ```md
-AS A person who wants to plan their day around statutory holidays and their mood,
-I WANT to have the information and tools I need to efficiently plan my day
-SO THAT I can proceed with ease and reward myself along the way
+AS a person who wants to plan their day 
+I WANT to bring my task list with me 
+SO THAT I can proceed with ease & reward myself regularly
 ```
 
 ## Acceptance Criteria
@@ -19,35 +19,29 @@ SO THAT I can proceed with ease and reward myself along the way
 ```md
 GIVEN I am using the day-dashboard application to plan my to-do lists,
 WHEN I open the day-dashboard,
-THEN I can select my mood 
-WHEN I have selected my daily mood,
 THEN I can read a motivational quote that changes every day
-WHEN I am wondering what day it even is,
-THEN I can see a calendar with local statutory holidays blocked off
-WHEN I am finally ready to plan out my day,
+WHEN I am ready to plan out my tasks,
 THEN the to-do list/planner is ready for my input
+WHEN I close my browser, my to-do list is stored locally
+THEN I can return to the page and update my tasks throughout the day
 WHEN I finish a task
 THEN I can check it off in a satisfying way
-WHEN I close my browser, my to-do list is stored locally
+WHEN I am idle waiting for an appointment, on hold or simply bored
+THEN I can use the love calculator, joke and activity generating APIs
 ```
 
-The following animation (image) demonstrates the application functionality (look):
+The following images demonstrate the application look:
+![Screensnip 1 of day dashboard](https://user-images.githubusercontent.com/116177485/213757966-b7b5acef-115f-4fc8-9321-a113a0a7942e.png)
+![Screensnip 2 of day dashboard](https://user-images.githubusercontent.com/116177485/213758068-6f2855f1-48c2-4e66-a0d7-c42e7d9af994.png)
 
-## Technologies used:
+### Technologies used: 
+Tailwind, Vanilla Javascript, JQuery, CSS.
 
-**HTML
+### Breakdown of tasks and roles:
+Alexia: HTML, CSS & Tailwind
+Ashley: Love Calculator API in modal, Quote API, Daily Tasks section
+Mohamed: Richest People API
+Felix: Joke API & Activity API
 
-We use to structure and layout of a web page, including headings, paragraphs, images, and links.
-
-**CSS
-
-We used to style and design our website from its structure, making it easier to maintain and updateand response.
-
-**avaScript
-
-used to design and manipulation of HTML and CSS, and can be used to create dynamic web applications.
-
-**jQuery
-
-used for writing JavaScript code by providing pre-written functions and methods for common tasks. It allows us to easily select and manipulate elements on a web page, handle events, and create animations, among other things.
-
+#### Challenges: Tailwind Grid system, Tailwind Font and sizing, finding a working free API
+#### Successes: API’s all working correctly. CSS sections were laid out as desired.
