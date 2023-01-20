@@ -37,10 +37,12 @@ The following image demonstrates the general look of the application:
 Tailwind, Vanilla Javascript, JQuery, CSS.
 
 ### Breakdown of tasks and roles:
+```md
 Alexia: HTML, CSS & Tailwind
 Ashley: Love Calculator API in modal, Quote API, Daily Tasks section
 Mohamed: Richest People API
 Felix: Joke API & Activity API
+```
 
 #### Challenges: Tailwind Grid system, Tailwind Font and sizing, finding a working free API
 #### Successes: API’s all working correctly. CSS sections were laid out as desired.
